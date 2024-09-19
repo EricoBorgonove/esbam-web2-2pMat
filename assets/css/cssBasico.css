@@ -1,0 +1,43 @@
+/*seletores CSS
+
+são indentificadores das regras que serão aplicadas aos elementos
+
+*{
+    seletor universal
+    -- as regras serão aplicadas a TODAS as tags do documento.
+}
+span{
+    seletor de tags
+    -- irá aplicar o conjunto de regras a todas as tags daquele tipo
+.classe1{
+    seletor de classes
+    - irá aplicar o conjunto de regras a todas as tags que possuirem
+    aquela classe
+}
+#selcId{
+    seletor de ID
+    -- irá aplicar a tag que possui aquele ID
+    */
+
+
+
+*{
+    text-decoration: none;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+span{
+    background-color: aqua;
+}
+.classe1{
+    color: blueviolet;
+}
+.classe2{
+    font-weight: 600;
+}
+#parMussun{
+    padding: 15px;
+    border: 2px solid blue;
+    border-radius: 25px;
+}

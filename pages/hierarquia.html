@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        span, p{ /*aplica as duas tags*/
+            color: rgb(42, 98, 79);
+        }
+        div ul{ /*aplica somente as ul dentro de div*/
+            background-color: aqua;
+        }
+        div .li1{
+            color: blueviolet;
+        }
+        #meuP p {
+            background-color: blue;
+        }
+    </style>
+
+
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>4</li>
+            <li class="li1">5</li>
+            <li>6</li>
+        </ul>
+    </div>
+    <ul>
+        <li>7</li>
+        <li class="li1">8</li>
+        <li>9</li>
+    </ul>
+    <span>10</span>
+    <p id="meuP">
+        11
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+    </p>
+    <p>
+        <p>teste</p>
+        <p>teste</p>
+        <p>teste</p>
+    </p>
+</body>
+</html>
