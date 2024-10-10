@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <input type="range" name="" id="primeiroNumero" min="0" max="100" step="1">
+        <span id="spanPrimeiroNumero"></span>
+        <!-- <button onclick="somar()">Somar</button> -->
+    </div>
+    <p id="resultado"></p>
+    <script>
+        let primeiroNumero = document.getElementById("primeiroNumero")
+        let resultado = document.getElementById("resultado")
+        let spanPrimeiroNumero = document.getElementById("spanPrimeiroNumero")
+        function atualizarPrimeiro(){
+            spanPrimeiroNumero.innerHTML = primeiroNumero.value
+        }
+        primeiroNumero.addEventListener('input', atualizarPrimeiro)
+    </script>
+</body>
+</html>
