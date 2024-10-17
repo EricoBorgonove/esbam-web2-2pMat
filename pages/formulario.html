@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formuário</title>
+    <link rel="stylesheet" href="/assets/css/formulario.css">
 </head>
 <body>
-    <form>
+    <div>
         <h2>Fale Conosco</h2>
         <div>
             <label for="name">Nome: </label>
@@ -25,16 +26,21 @@
         <div>
             <h4>Login</h4>
             <label for="email">email</label>
-            <input type="email" name="email" id="">
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="">
+            <input type="email" name="email" id=""><br>
+
+            <label for="senha1">Senha: </label>
+            <input type="password" name="senha1" id="inputSenha1"">
+            <label for="senha2">Confirme a Senha:</label>
+            <input type="password" name="senha2" id="inputSenha2">
+            <button onclick="togglePass()" id="botaoVer">Ver Senha</button>
         </div>
+        <hr>
         <div>
-            <label for="genero">Gênero: </label>
-            <input type="radio" name="genero" id="" checked> Masculino
-            <input type="radio" name="genero" id=""> Feminino
-            <input type="radio" name="genero" id=""> Outros
-            <input type="text" name="" id="" disabled>
+            <label for="generos">Gênero: </label>
+            <input type="radio" name="generos" id=""> Masculino
+            <input type="radio" name="generos" id=""> Feminino
+            <input type="radio" name="generos" id=""> Outros
+            <input type="text" name="" id="inputOutros" disabled>
         </div>
         <div>
             <h4>Preferências Musicais</h4>
@@ -43,6 +49,8 @@
             <input type="checkbox" name="" id="" disabled> Funk
         </div>
 
-    </form>
+    </div>
+
+    <script src="/assets/js/formulario.js"></script>
 </body>
 </html>
