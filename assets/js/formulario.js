@@ -1,3 +1,4 @@
+//countries[4].code
 const countries = [
     { name: "Afghanistan", code: "AF" },
     { name: "Albania", code: "AL" },
@@ -220,12 +221,13 @@ const estadosBrasil = [
     { name: "São Paulo", code: "SP" },
     { name: "Sergipe", code: "SE" },
     { name: "Tocantins", code: "TO" }
-];
+]
 
 
 const generos = document.getElementsByName("generos")
 let senha1 = document.getElementById("inputSenha1")
 let senha2 = document.getElementById("inputSenha2")
+let paises = document.getElementById("paises")
 
 function abrirOutros(){
     let outros = document.querySelector("#inputOutros")
@@ -262,9 +264,38 @@ function comparePassword(){
         erroSenha.innerHTML=""
     }
 }
+
+function verPaises(){
+    for (let i = 0; i< countries.length; i++){
+        let option = document.createElement("option")
+        option.textContent = countries[i].name
+        option.setAttribute("value", countries[i].code)
+        paises.appendChild(option)
+    }
+}
+
+function verEstados(){
+    let estados = document.getElementById("estados")
+    let labelEstados = document.getElementById("labelEstados")
+    if (paises.value == "BR"){
+        for (let i = 0; i< estadosBrasil.length; i++){
+            let option = document.createElement("option")
+            option.textContent = estadosBrasil[i].name
+            option.setAttribute("value", estadosBrasil[i].code)
+            estados.appendChild(option)
+        }
+        estados.hidden = false
+        labelEstados.hidden = false
+    }else{
+        estados.hidden = true
+        labelEstados.hidden = true
+    }
+}
+
+verPaises()
 generos.forEach(genero => {
     genero.addEventListener('input', abrirOutros)
 })
-
+paises.addEventListener("click", verEstados)
 senha1.addEventListener("input", comparePassword)
 senha2.addEventListener("input", comparePassword)
