@@ -29,12 +29,10 @@ input{
       -webkit-appearance: none;
       margin: 0;
     }
-
     /* Remover setas no Firefox */
     input[type="number"] {
       -moz-appearance: textfield;
     }
-
     /* Garantir consistência em outros navegadores */
     input[type="number"] {
       appearance: none;
