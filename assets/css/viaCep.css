@@ -23,8 +23,19 @@ label{
 input{
     margin: 2px;
 }
-input[type="number"] {
-    -moz-appearance: textfield; /* Para navegadores Firefox */
-    -webkit-appearance: none; /* Para navegadores baseados no WebKit (Chrome, Safari) */
-    appearance: none; /* Para navegadores compatíveis com a especificação */
-  }
+    /* Remover setas em navegadores baseados no WebKit (Chrome, Safari, Edge) */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Remover setas no Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    /* Garantir consistência em outros navegadores */
+    input[type="number"] {
+      appearance: none;
+    }
