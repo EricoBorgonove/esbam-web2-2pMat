@@ -281,6 +281,7 @@ function verEstados(){
         for (let i = 0; i< estadosBrasil.length; i++){
             let option = document.createElement("option")
             option.textContent = estadosBrasil[i].name
+            //option.value = estadosBrasil[i].code
             option.setAttribute("value", estadosBrasil[i].code)
             estados.appendChild(option)
         }

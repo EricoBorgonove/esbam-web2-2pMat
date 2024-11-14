@@ -1,0 +1,30 @@
+body{
+    background-color: rgba(0, 128, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+}
+button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+button:hover{
+    color: green;
+    background-color: transparent;
+    border: 1px solid green;
+}
+label{
+    font-weight: 500;
+}
+input{
+    margin: 2px;
+}
+input[type="number"] {
+    -moz-appearance: textfield; /* Para navegadores Firefox */
+    -webkit-appearance: none; /* Para navegadores baseados no WebKit (Chrome, Safari) */
+    appearance: none; /* Para navegadores compatíveis com a especificação */
+  }

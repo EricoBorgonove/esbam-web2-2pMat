@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/viaCep.css">
+    <title>Pesquisa de CEPs</title>
+</head>
+<body>
+    <main>
+        <h2>Sistema de Consulta de CEPs</h2>
+        <div>
+            <label for="labelCep">CEP: </label>
+            <input type="number" name="labelCep" id="inputCep" placeholder="Digite o CEP">
+            <button onclick="validaCep()">Pesquisar</button>
+        </div>
+        <hr>
+        <div>
+            <div>
+                <label for="labelLogradouro">Logradouro: </label>
+                <input type="text" name="labelLogradouro" id="logradouro" disabled>
+                <label for="labelBairro">Bairro: </label>
+                <input type="text" name="labelBairro" id="bairro" disabled>
+            </div>
+            <div>
+                <label for="labelCidade">Cidade: </label>
+                <input type="text" name="labelCidade" id="cidade" disabled>
+                <label for="labelEstado">Estado: </label>
+                <input type="text" name="labelEstado" id="estado" disabled>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="/assets/js/viaCep.js"></script>
+</body>
+</html>
