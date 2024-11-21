@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 .menu-horizontal{
     display: flex;
@@ -16,11 +17,42 @@ body{
 h1{
     text-align: center;
 }
-p{
-    margin: 15px;
+.meup{
+    margin-left: 25px;
     text-align: justify;
 }
 .section-horizontal{
     display: flex;
     flex-direction: row;
+}
+.first-section{
+    background-color: rgb(9, 9, 91);
+    padding: 50px 50px;
+    color: white;
+}
+.second-section{
+    padding: 50px 50px;
+}
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.img-card{
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+.card{
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.p-card{
+    font-size: 0.8rem;
+    text-align: justify;
 }
